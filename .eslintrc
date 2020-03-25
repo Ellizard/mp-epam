@@ -6,9 +6,12 @@
   },
   "rules": {
     "no-unused-vars": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "extends": ["plugin:prettier/recommended"],
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": "error"
+    }
   },
-  "extends": [
-    "eslint:recommended"
-  ]
+  "extends": ["plugin:prettier/recommended"]
 }
